@@ -24,10 +24,10 @@ let acertos =0
 
 //percorrer perguntass
 for( let i=0; i<perguntas.length;i++){
-    const resppostaUsuario =prompt(perguntas[i].pergunta)
+    const respostaUsuario =prompt(perguntas[i].pergunta)
 
-if(resppostaUsuario.toLowerCase()===perguntas[i].resposta.toLowerCase())
+if(respostaUsuario.toLowerCase()===perguntas[i].resposta.toLowerCase())
     acertos++;
 //mostrand o resultado na pagina
-document.getElementById("msg").innerHTML = (`Você acertou ${acertos} de ${perguntas.lengh} perguntas`)
+document.getElementById("msg").innerHTML = (`Você acertou ${acertos} de ${perguntas.length} perguntas`)
 }
